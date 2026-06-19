@@ -83,7 +83,7 @@ public final class TcsClientTest {
 
     String url = client.getCallbackUri(SECRET);
 
-    String expectedUriString = String.format("https://%s:%d/%s", VALID_DOMAIN, VALID_PORT, CBID);
+    String expectedUriString = String.format("http://%s:%d/%s", VALID_DOMAIN, VALID_PORT, CBID);
     assertThat(url).isEqualTo(expectedUriString);
   }
 
